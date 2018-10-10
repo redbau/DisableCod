@@ -1,0 +1,9 @@
+version: 0.1
+api-version: 1.13
+name: DisableCod
+main: com.mary.disablecodplugin.Main
+author: Mary
+description: Disable cod from spawning, to prevent memory leaks
+commands: 
+  disablecod:
+    description: test
