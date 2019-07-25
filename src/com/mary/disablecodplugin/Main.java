@@ -12,17 +12,15 @@ public class Main extends JavaPlugin implements Listener {
 	
 	@Override
 	public void onEnable() {
-
-		System.out.println("§dDisable Cod §fplugin enabled (v0.1)");
-		
-		// Events
+		System.out.println("§dDisable Cod §fplugin enabled (v0.2)");
 		Bukkit.getPluginManager().registerEvents(this, this);
-
 	}
 
 	@EventHandler(ignoreCancelled = true, priority = EventPriority.HIGH)
 	public void onCreatureSpawn(CreatureSpawnEvent event) {
-		if (event.getEntity().getName().equals("Cod")) {
+		if (event.getEntity().getName().equals("Cod")
+			|| event.getEntity().getName().equals("Salmon")
+			) {
 			event.setCancelled(true);
 			//getServer().broadcastMessage("Cod blocked!");
 		}
