@@ -10,7 +10,7 @@
 
 1. Place .jar file inside your /plugins/ folder on Spigot
 2. Restart the server
-3. That's it! Cod are disabled.
+3. That's it! Cod & Salmon are both disabled from spawning in all worlds (even when you use spawn eggs)
 
 ## Compatibility
 
